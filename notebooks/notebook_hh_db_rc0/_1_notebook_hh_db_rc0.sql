@@ -1,9 +1,10 @@
 /*markdown
-# Example of marketing web application, preliminary study carried out thanks to the "notebook" paradigm
+# Hobby Horse
+Example of marketing web application, preliminary study carried out thanks to the "notebook" paradigm.
 */
 
 /*markdown
-## backend database administration
+## Backend database administration
 */
 
 USE `notebook_db_rc0`;
