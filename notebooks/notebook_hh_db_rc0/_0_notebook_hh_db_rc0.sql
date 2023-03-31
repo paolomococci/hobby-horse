@@ -45,10 +45,10 @@ EXECUTE cleaning_statement;
 DEALLOCATE PREPARE cleaning_statement;
 SET FOREIGN_KEY_CHECKS = 1;
 
-SHOW TABLES;
-
 /*markdown
 ## Use notebook_hh_db_rc0
 */
 
 USE `notebook_hh_db_rc0`;
+
+SHOW TABLES;
