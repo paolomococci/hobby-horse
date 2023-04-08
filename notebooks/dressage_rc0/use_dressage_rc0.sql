@@ -3,3 +3,9 @@
 */
 
 USE `dressage_rc0`;
+
+/*markdown
+## display all tables, if any
+*/
+
+SHOW TABLES;
