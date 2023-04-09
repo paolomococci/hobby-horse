@@ -2,7 +2,7 @@
 # Create database dressage_rc0 with administrator permissions
 */
 
-CREATE DATABASE `dressage_rc0`;
+CREATE DATABASE IF NOT EXISTS `dressage_rc0`;
 
 /*markdown
 ## assign privileges to a specific user
