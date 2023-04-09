@@ -11,3 +11,9 @@ CREATE DATABASE IF NOT EXISTS `dressage_rc0`;
 GRANT ALL PRIVILEGES ON dressage_rc0.* TO 'username'@'localhost';
 FLUSH PRIVILEGES;
 SHOW GRANTS FOR 'username'@'localhost';
+
+/*markdown
+## show databases
+*/
+
+SHOW DATABASES;
