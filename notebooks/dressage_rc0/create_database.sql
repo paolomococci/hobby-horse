@@ -17,3 +17,9 @@ SHOW GRANTS FOR 'username'@'localhost';
 */
 
 SHOW DATABASES;
+
+/*markdown
+## use dressage_rc0
+*/
+
+USE `dressage_rc0`;
