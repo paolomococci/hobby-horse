@@ -16,6 +16,12 @@ CREATE TABLE IF NOT EXISTS `projects` (
 ) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_unicode_ci;
 
 /*markdown
+### command that returns the description of the table projects
+*/
+
+DESCRIBE `projects`;
+
+/*markdown
 ## create table employees
 */
 
