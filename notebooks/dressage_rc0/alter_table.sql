@@ -52,3 +52,11 @@ SET FOREIGN_KEY_CHECKS = ON;
 */
 
 DESCRIBE `customers`;
+
+/*markdown
+### first I add column project
+*/
+
+ALTER TABLE `customers` 
+    ADD COLUMN `project_id` BIGINT(20) UNSIGNED NOT NULL DEFAULT 0 
+    AFTER `name`;
