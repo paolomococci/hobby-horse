@@ -20,7 +20,6 @@ USE `dressage_rc0`;
 
 SHOW TABLES;
 
-
 /*markdown
 ## create table projects
 */
