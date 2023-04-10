@@ -32,3 +32,9 @@ SELECT * FROM `customers`;
 */
 
 SELECT * FROM `employees`;
+
+/*markdown
+## select all data from table projects
+*/
+
+SELECT * FROM `projects`;
