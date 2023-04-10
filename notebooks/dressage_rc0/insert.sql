@@ -48,3 +48,14 @@ INSERT LOW_PRIORITY INTO `employees` (`name`, `surname`) VALUES
     ('Jane', 'Smith'),
     ('Richard', 'Roe');
 SET FOREIGN_KEY_CHECKS = ON;
+
+/*markdown
+## insert dummy data into table projects
+*/
+
+INSERT LOW_PRIORITY INTO `projects` (`name`, `description`) VALUES 
+    ('project_1', 'Some description of project one'),
+    ('project_2', 'Some description of project two'),
+    ('project_3', 'Some description of project three'),
+    ('project_4', 'Some description of project four'),
+    ('project_5', 'Some description of project five');
