@@ -26,3 +26,10 @@ SHOW TABLES;
 
 ALTER TABLE `employees` 
     DROP COLUMN IF EXISTS `project_id`;
+
+/*markdown
+## drop column project_id belonging to table customers
+*/
+
+ALTER TABLE `customers` 
+    DROP COLUMN IF EXISTS `project_id`;
