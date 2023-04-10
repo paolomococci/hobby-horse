@@ -41,7 +41,7 @@ ALTER TABLE `employees`
 SET FOREIGN_KEY_CHECKS = OFF;
 ALTER TABLE `employees` 
     ADD CONSTRAINT `fk_employee_to_project` FOREIGN KEY (`project_id`) REFERENCES `projects` (`id`) 
-    ON UPDATE CASCADE 
+    ON UPDATE NO ACTION 
     ON DELETE SET DEFAULT;
 SET FOREIGN_KEY_CHECKS = ON;
 
@@ -66,6 +66,6 @@ ALTER TABLE `customers`
 SET FOREIGN_KEY_CHECKS = OFF;
 ALTER TABLE `customers` 
     ADD CONSTRAINT `fk_customer_to_project` FOREIGN KEY (`project_id`) REFERENCES `projects` (`id`) 
-    ON UPDATE CASCADE 
+    ON UPDATE NO ACTION 
     ON DELETE SET DEFAULT;
 SET FOREIGN_KEY_CHECKS = ON;
