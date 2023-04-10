@@ -19,3 +19,10 @@ USE `dressage_rc0`;
 */
 
 SHOW TABLES;
+
+
+/*markdown
+## select all data from table customers
+*/
+
+SELECT * FROM `customers`;
