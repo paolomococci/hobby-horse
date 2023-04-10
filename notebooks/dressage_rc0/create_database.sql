@@ -25,7 +25,7 @@ SHOW DATABASES;
 USE `dressage_rc0`;
 
 /*markdown
-## show tables of dresssage_rc0
+## show tables of dressage_rc0
 */
 
 SHOW TABLES;
