@@ -20,7 +20,6 @@ USE `dressage_rc0`;
 
 SHOW TABLES;
 
-
 /*markdown
 ## add a foreign key to the table employees
 */
@@ -41,11 +40,10 @@ ALTER TABLE `employees`
 
 SET FOREIGN_KEY_CHECKS = OFF;
 ALTER TABLE `employees` 
-    ADD CONSTRAINT `fk_project_id` FOREIGN KEY (`project_id`) REFERENCES `projects` (`id`) 
+    ADD CONSTRAINT `fk_employee_to_project` FOREIGN KEY (`project_id`) REFERENCES `projects` (`id`) 
     ON UPDATE CASCADE 
     ON DELETE SET DEFAULT;
 SET FOREIGN_KEY_CHECKS = ON;
-
 
 /*markdown
 ## add a foreign key to the table customers
@@ -58,7 +56,7 @@ DESCRIBE `customers`;
 */
 
 ALTER TABLE `customers` 
-    ADD COLUMN `project_id` BIGINT(20) UNSIGNED DEFAULT NULL 
+    ADD COLUMN `project_id` BIGINT(20) UNSIGNED NOT NULL DEFAULT 0 
     AFTER `name`;
 
 /*markdown
@@ -67,7 +65,7 @@ ALTER TABLE `customers`
 
 SET FOREIGN_KEY_CHECKS = OFF;
 ALTER TABLE `customers` 
-    ADD CONSTRAINT `fk_project_id` FOREIGN KEY (`project_id`) REFERENCES `projects` (`id`) 
+    ADD CONSTRAINT `fk_customer_to_project` FOREIGN KEY (`project_id`) REFERENCES `projects` (`id`) 
     ON UPDATE CASCADE 
     ON DELETE SET DEFAULT;
 SET FOREIGN_KEY_CHECKS = ON;
