@@ -58,5 +58,5 @@ DESCRIBE `customers`;
 */
 
 ALTER TABLE `customers` 
-    ADD COLUMN `project_id` BIGINT(20) UNSIGNED NOT NULL DEFAULT 0 
+    ADD COLUMN `project_id` BIGINT(20) UNSIGNED UNIQUE DEFAULT NULL 
     AFTER `name`;
