@@ -26,3 +26,9 @@ SHOW TABLES;
 */
 
 DROP TABLE IF EXISTS `employees`;
+
+/*markdown
+## drop table customers
+*/
+
+DROP TABLE IF EXISTS `customers`;
