@@ -45,3 +45,10 @@ ALTER TABLE `employees`
     ON UPDATE CASCADE 
     ON DELETE SET DEFAULT;
 SET FOREIGN_KEY_CHECKS = ON;
+
+
+/*markdown
+## add a foreign key to the table customers
+*/
+
+DESCRIBE `customers`;
