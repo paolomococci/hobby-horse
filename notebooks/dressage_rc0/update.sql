@@ -26,3 +26,9 @@ SHOW TABLES;
 */
 
 SELECT `id`, `name`, `idle` FROM `projects`;
+
+/*markdown
+## updates column idle of table projects where idle equals 0
+*/
+
+UPDATE `projects` SET `idle` = 1 WHERE `idle` = 0;
