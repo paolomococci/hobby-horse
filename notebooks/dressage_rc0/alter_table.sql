@@ -69,3 +69,14 @@ ALTER TABLE `customers`
     ON UPDATE NO ACTION 
     ON DELETE SET DEFAULT;
 SET FOREIGN_KEY_CHECKS = ON;
+
+
+/*markdown
+## add column idle to table projects
+*/
+
+ALTER TABLE `projects` 
+    ADD COLUMN `idle` TINYINT(1) DEFAULT 0 
+    AFTER `description`;
+
+DESCRIBE `projects`;
