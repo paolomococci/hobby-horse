@@ -26,3 +26,9 @@ SHOW TABLES;
 */
 
 SELECT * FROM `customers`;
+
+/*markdown
+## select all data from table employees
+*/
+
+SELECT * FROM `employees`;
