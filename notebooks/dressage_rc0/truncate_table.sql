@@ -25,3 +25,9 @@ SHOW TABLES;
 */
 
 TRUNCATE TABLE `employees`;
+
+/*markdown
+## truncate table projects
+*/
+
+TRUNCATE TABLE `projects`;
