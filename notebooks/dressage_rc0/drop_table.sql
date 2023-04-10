@@ -19,3 +19,10 @@ USE `dressage_rc0`;
 */
 
 SHOW TABLES;
+
+
+/*markdown
+## drop table employees
+*/
+
+DROP TABLE IF EXISTS `employees`;
