@@ -24,4 +24,4 @@ SHOW TABLES;
 ## truncate table employees
 */
 
-TRUNCATE TABLE `employees`;;
+TRUNCATE TABLE `employees`;
