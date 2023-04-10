@@ -60,3 +60,14 @@ DESCRIBE `customers`;
 ALTER TABLE `customers` 
     ADD COLUMN `project_id` BIGINT(20) UNSIGNED UNIQUE DEFAULT NULL 
     AFTER `name`;
+
+/*markdown
+### after that i add the foreign key fk_project_id
+*/
+
+--SET FOREIGN_KEY_CHECKS = OFF;
+ALTER TABLE `customers` 
+    ADD CONSTRAINT `fk_project_id` FOREIGN KEY (`project_id`) REFERENCES `projects` (`id`) 
+    ON UPDATE CASCADE 
+    ON DELETE SET DEFAULT;
+--SET FOREIGN_KEY_CHECKS = ON;
