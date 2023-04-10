@@ -59,7 +59,6 @@ CREATE TABLE IF NOT EXISTS `employees` (
 
 DESCRIBE `employees`;
 
-
 /*markdown
 ## create table customers
 */
@@ -71,3 +70,9 @@ CREATE TABLE IF NOT EXISTS `customers` (
   `updated_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`)
 ) ENGINE = InnoDB DEFAULT CHARSET = utf8mb4 COLLATE = utf8mb4_unicode_ci;
+
+/*markdown
+### command that returns the description of the table customers
+*/
+
+DESCRIBE `customers`;
