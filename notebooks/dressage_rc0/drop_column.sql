@@ -21,8 +21,8 @@ USE `dressage_rc0`;
 SHOW TABLES;
 
 /*markdown
-## drop a column
+## drop column project_id belonging to table employees
 */
 
-ALTER TABLE `table_name` 
-    DROP COLUMN IF EXISTS `column_name`;
+ALTER TABLE `employees` 
+    DROP COLUMN IF EXISTS `project_id`;
