@@ -65,7 +65,9 @@ ALTER TABLE `customers`
 ### after that i add the foreign key fk_project_id
 */
 
+SET FOREIGN_KEY_CHECKS = OFF;
 ALTER TABLE `customers` 
     ADD CONSTRAINT `fk_project_id` FOREIGN KEY (`project_id`) REFERENCES `projects` (`id`) 
     ON UPDATE CASCADE 
     ON DELETE SET DEFAULT;
+SET FOREIGN_KEY_CHECKS = ON;
