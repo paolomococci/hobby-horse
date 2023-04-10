@@ -25,4 +25,10 @@ SHOW TABLES;
 ## insert dummy data into table customers
 */
 
-INSERT LOW_PRIORITY INTO `customers` (`name`) VALUES ();
+INSERT LOW_PRIORITY INTO `customers` (`name`) VALUES 
+    ('customer_1'),
+    ('customer_2'),
+    ('customer_3'),
+    ('customer_4'),
+    ('customer_5'),
+    ('customer_6');
