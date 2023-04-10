@@ -34,3 +34,17 @@ INSERT LOW_PRIORITY INTO `customers` (`name`) VALUES
     ('customer_5'),
     ('customer_6');
 SET FOREIGN_KEY_CHECKS = ON;
+
+/*markdown
+## insert dummy data into table employees
+*/
+
+SET FOREIGN_KEY_CHECKS = OFF;
+INSERT LOW_PRIORITY INTO `employees` (`name`, `surname`) VALUES 
+    ('John', 'Doe'),
+    ('Johnny', 'Doe'),
+    ('Jane', 'Doe'),
+    ('Joe', 'Bloggs'),
+    ('Jane', 'Smith'),
+    ('Richard', 'Roe');
+SET FOREIGN_KEY_CHECKS = ON;
