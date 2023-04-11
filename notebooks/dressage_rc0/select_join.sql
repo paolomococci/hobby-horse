@@ -19,3 +19,14 @@ USE `dressage_rc0`;
 */
 
 SHOW TABLES;
+
+
+/*markdown
+## join clause taking into account tables customers and projects
+*/
+
+DESCRIBE `customers`;
+
+DESCRIBE `projects`;
+
+SELECT 
