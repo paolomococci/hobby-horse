@@ -20,7 +20,6 @@ USE `dressage_rc0`;
 
 SHOW TABLES;
 
-
 /*markdown
 ## select columns id, name and idle from table projects
 */
