@@ -33,3 +33,16 @@ SELECT `projects`.`id`, `projects`.`name`, `projects`.`description`, `customers`
     FROM `projects` 
     INNER JOIN `customers` ON `projects`.`id` = `customers`.`project_id` 
     ORDER BY `projects`.`id` ASC;
+
+/*markdown
+## join clause taking into account tables employees and projects
+*/
+
+DESCRIBE `employees`;
+
+DESCRIBE `projects`;
+
+SELECT `projects`.`id`, `projects`.`name`, `projects`.`description`, `employees`.`name`, `employees`.`surname`  
+    FROM `projects` 
+    INNER JOIN `employees` ON `projects`.`id` = `employees`.`project_id` 
+    ORDER BY `projects`.`id` ASC;
