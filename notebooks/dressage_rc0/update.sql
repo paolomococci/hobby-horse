@@ -31,3 +31,9 @@ SELECT `id`, `name`, `idle` FROM `projects`;
 */
 
 UPDATE `projects` SET `idle` = 1 WHERE `idle` = 0;
+
+/*markdown
+### I proceed to assign employees to each project
+*/
+
+UPDATE `employees` SET `project_id` = 3 WHERE id = 1;
