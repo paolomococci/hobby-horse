@@ -42,3 +42,13 @@ UPDATE `employees` SET `project_id` = 2 WHERE id = 6;
 UPDATE `employees` SET `project_id` = 5 WHERE id = 4;
 UPDATE `employees` SET `project_id` = 4 WHERE id = 2;
 UPDATE `employees` SET `project_id` = 4 WHERE id = 5;
+
+/*markdown
+### I proceed to link all but one client to the five projects registered in the system
+*/
+
+UPDATE `customers` SET `project_id` = 3 WHERE id = 7;
+UPDATE `customers` SET `project_id` = 1 WHERE id = 11;
+UPDATE `customers` SET `project_id` = 2 WHERE id = 9;
+UPDATE `customers` SET `project_id` = 5 WHERE id = 12;
+UPDATE `customers` SET `project_id` = 4 WHERE id = 10;
