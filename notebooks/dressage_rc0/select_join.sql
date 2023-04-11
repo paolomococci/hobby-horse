@@ -29,10 +29,15 @@ DESCRIBE `customers`;
 
 DESCRIBE `projects`;
 
-SELECT `projects`.`id`, `projects`.`name`, `projects`.`description`, `customers`.`name` 
+SELECT 
+    `projects`.`id` AS `project ID`, 
+    `projects`.`name` AS `project name`, 
+    `projects`.`description` AS `project description`, 
+    `customers`.`name` AS `customer name` 
     FROM `projects` 
-    INNER JOIN `customers` ON `projects`.`id` = `customers`.`project_id` 
-    ORDER BY `projects`.`id` ASC;
+    INNER JOIN `customers` 
+        ON `projects`.`id` = `customers`.`project_id` 
+        ORDER BY `projects`.`id` ASC;
 
 /*markdown
 ## join clause taking into account tables employees and projects
@@ -42,7 +47,8 @@ DESCRIBE `employees`;
 
 DESCRIBE `projects`;
 
-SELECT `projects`.`id`, `projects`.`name`, `projects`.`description`, `employees`.`name`, `employees`.`surname`  
-    FROM `projects` 
-    INNER JOIN `employees` ON `projects`.`id` = `employees`.`project_id` 
-    ORDER BY `projects`.`id` ASC;
+SELECT p.id, p.name AS project_name, p.description, e.name AS employee_name, e.surname  
+    FROM `projects` AS p
+    INNER JOIN `employees` AS e 
+        ON p.id = e.project_id 
+        ORDER BY p.id ASC;
