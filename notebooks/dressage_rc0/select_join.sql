@@ -29,4 +29,7 @@ DESCRIBE `customers`;
 
 DESCRIBE `projects`;
 
-SELECT 
+SELECT `projects`.`id`, `projects`.`name`, `projects`.`description`, `customers`.`name` 
+    FROM `projects` 
+    INNER JOIN `customers` ON `projects`.`id` = `customers`.`project_id` 
+    ORDER BY `projects`.`id` ASC;
