@@ -37,3 +37,8 @@ UPDATE `projects` SET `idle` = 1 WHERE `idle` = 0;
 */
 
 UPDATE `employees` SET `project_id` = 3 WHERE id = 1;
+UPDATE `employees` SET `project_id` = 1 WHERE id = 3;
+UPDATE `employees` SET `project_id` = 2 WHERE id = 6;
+UPDATE `employees` SET `project_id` = 5 WHERE id = 4;
+UPDATE `employees` SET `project_id` = 4 WHERE id = 2;
+UPDATE `employees` SET `project_id` = 4 WHERE id = 5;
